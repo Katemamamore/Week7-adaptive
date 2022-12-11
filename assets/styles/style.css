@@ -1,0 +1,201 @@
+@media screen and (min-width: 1024px) {
+    .body_page{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 10% 1fr 20%;
+        height: 100vh;
+        grid-template-areas: 
+        "header header header" 
+        "section section aside"
+        "footer footer footer";
+    }
+    .header_page{
+        background-color: rgb(209, 209, 209);
+        grid-area: header;
+    }
+    .heading1{
+        text-align: center;
+    }
+    .main_page{
+        background-color: antiquewhite;
+        grid-area: section;
+        display: grid;
+    
+    }
+    .heading2{
+        text-align: center;
+    }
+    .aside_page{
+        background-color: rgb(223, 250, 208);
+        grid-area: aside;
+    }
+    .heading3{
+        text-align: center;
+    }
+    .footer_page{
+        background-color: rgb(209, 209, 209);
+        grid-area: footer;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+    .footer_block{
+        background-color: white;
+        font-weight: bold;
+       justify-content: space-around;
+       margin: 10%;
+       text-align: center;
+       padding-top: 10%;
+       font-weight: bold;
+    }
+    .div_page{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        "content1 content2"
+        "content3 content3";
+    }
+    .content1, .content2, .content3{
+        background-color: rgb(253, 218, 176);
+        margin-inline: ;
+        margin: 2rem;
+        text-align: center;
+        font-weight: bold;  
+        padding: 3%;; 
+    }
+    .content1{
+        grid-area: content1;
+    }
+    .content2{
+        grid-area: content2;
+    }
+    .content3{
+        grid-area: content3;
+    } 
+}
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    .body_page{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 10% 1fr;
+        height: 100vh;
+        grid-template-areas: 
+        "header header header" 
+        "section section aside";
+    }
+    .header_page{
+        background-color: rgb(209, 209, 209);
+        grid-area: header;
+    }
+    .heading1{
+        text-align: center;
+    }
+    .main_page{
+        background-color: antiquewhite;
+        grid-area: section;
+        display: grid;
+    
+    }
+    .heading2{
+        text-align: center;
+    }
+    .aside_page{
+        background-color: rgb(223, 250, 208);
+        grid-area: aside;
+    }
+    .heading3{
+        text-align: center;
+    }
+    .div_page{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        "content1 content2"
+        "content3 content3";
+    }
+    .content1, .content2, .content3{
+        background-color: rgb(253, 218, 176);
+        margin-inline: ;
+        margin: 2rem;
+        text-align: center;
+        font-weight: bold;  
+        padding: 3%;; 
+    }
+    .content1{
+        grid-area: content1;
+    }
+    .content2{
+        grid-area: content2;
+    }
+    .content3{
+        grid-area: content3;
+    } 
+ .footer_page{
+    display: none;
+ }   
+}
+@media screen and (max-width: 767px) {
+    .body_page{
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-template-rows: 10% 1fr 1fr;
+        height: 100vh;
+        grid-template-areas: 
+        "header" 
+        "section"
+        "aside";
+    }
+    .header_page{
+        background-color: rgb(209, 209, 209);
+        grid-area: header;
+    }
+    .heading1{
+        text-align: center;
+    }
+    .main_page{
+        background-color: antiquewhite;
+        grid-area: section;
+        display: grid;
+    
+    }
+    .heading2{
+        text-align: center;
+    }
+    .aside_page{
+        background-color: rgb(223, 250, 208);
+        grid-area: aside;
+    }
+    .heading3{
+        text-align: center;
+    }
+    .div_page{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        "content1 content2"
+        "content3 content3";
+    }
+    .content1, .content2, .content3{
+        background-color: rgb(253, 218, 176);
+        margin-inline: ;
+        margin: 2rem;
+        text-align: center;
+        font-weight: bold;  
+        padding: 3%;; 
+    }
+    .content1{
+        grid-area: content1;
+    }
+    .content2{
+        grid-area: content2;
+    }
+    .content3{
+        grid-area: content3;
+    } 
+ .footer_page{
+    display: none;
+ }     
+}
